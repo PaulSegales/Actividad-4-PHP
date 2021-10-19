@@ -1,6 +1,9 @@
 <?php
     $menu = array("inicio", "definición", "importancia", "análisis", "comentarios", "contacto", "blogs");
 
+    $principal1 = "INTELIGENCIA";
+    $principal2 = "Artificial";
+
     $titulo1 = "¿Qué es la inteligencia Artificial-AI";
     
     $subtitulo1 = "obtenga más información sobre la ciencia de datos";
@@ -11,6 +14,24 @@
     $btnMas = "Leer Mas";
 
     $persona = (object)["persona1" =>"john deo", "persona2" => "Alejandra Avendaño", "persona3" => "Yúbal Fernández"];
+    $comentarios = (object)["comentario1" =>"La Inteligencia Artificial (IA) sin lugar a dudas ha sido uno de los grandes avances de la última década, permitiendo agilizar y facilitar procesos a toda escala, y entregando una ayuda fundamental para las personas y empresas. Contar con este tipo de tecnología hoy en día nos entrega la capacidad de conocer mejor a los usuarios, sus comportamientos y alinear servicios dependiendo de las necesidades que éstos tengan..", "comentario2" => "En la sociedad, dentro de las ciencias de la computación, la de la Inteligencia Artificial es una de las áreas que causa más expectación. Que un sistema pueda mejorar su comportamiento sobre la base de la experiencia y que además, tenga una noción de lo que es un error y que pueda evitarlo, resulta muy interesante. ", "comentario3" => "Los métodos tradicionales en Inteligencia Artificial que permitieron el desarrollo de los primeros sistemas expertos y otras aplicaciones, ha ido de la mano de los avances tecnológicos y las fronteras se han ido expandiendo constantemente cada vez que un logro, considerado imposible en su momento, se vuelve posible gracias a los avances en todo el mundo, generando incluso una nueva mentalidad de trabajo.  Creando siempre máquinas capaces de ayudar al ser humano, de sustituirlo en tareas desagradables, duraderas, pesadas o como complemento de ocio. "];
+
+    $descripcion = (object)["descripcion1" =>"En términos simples, inteligencia artificial (IA) se refiere a sistemas o máquinas que imitan la
+    inteligencia humana para realizar tareas y pueden mejorar iterativamente a partir de la información que
+    recopilan.", "descripcion2" => "Aunque no haya una definición estricta, por su naturaleza, cambiante y experimental, en su forma
+    simple, la Inteligencia Artificial (IA) es la combinación de algoritmos planteados con el propósito
+    de crear máquinas que presenten las mismas capacidades que el ser humano. En otras palabras, es el
+    intento de imitar la inteligencia humana usando un robot, o un software.", "descripcion3" => "La inteligencia artificial automatiza el aprendizaje y descubrimiento repetitivos a través de datos. La
+    inteligencia artificial es diferente de la automatización de robots basada en hardware. En lugar de
+    automatizar tareas manuales, la inteligencia artificial realiza tareas computarizadas frecuentes de alto
+    volumen de manera confiable y sin fatiga. Para este tipo de automatización, la investigación humana
+    sigue siendo fundamental para configurar el sistema y hacer las preguntas correctas.", "descripcion4" => "IA agrega inteligencia a productos existentes. En la mayoría de los casos, la inteligencia artificial no
+    se venderá como aplicación individual. En su lugar, los productos que ya utiliza serán mejorados con
+    recursos de inteligencia artificial, de forma muy similar en que se agregó Siri como característica a
+    una nueva generación de productos de Apple. La automatización, las plataformas conversacionales, los
+    bots y las máquinas inteligentes se pueden combinar con grandes cantidades de datos para mejorar muchas
+    tecnologías en el hogar y en el lugar de trabajo, desde inteligencia de seguridad hasta análisis de las
+    inversiones.", "descripcion5" => "La inteligencia artificial analiza más datos y datos más profundos empleando redes neuronales que tienen muchas capas ocultas. Construir un sistema de detección de fraude con cinco capas ocultas era casi imposible hace unos años. Todo eso ha cambiado con increíble poder de cómputo y el Big Data. Se necesitan muchos datos para entrenar modelos de aprendizaje profundo porque aprenden directamente de los datos. Cuantos más datos les pueda proporcionar, más precisos se vuelven.", "descripcion6" => "La inteligencia artificial logra una increíble precisión a través de redes neuronales profundas – lo cual antes era imposible. Por ejemplo, sus interacciones con Alexa, Google Search y Google Photos están todas basadas en el aprendizaje profundo – y se siguen volviendo más precisas cuanto más las usamos. En el campo de la medicina, las técnicas de inteligencia artificial del aprendizaje profundo, clasificación de imágenes y reconocimiento de objetos se pueden emplear ahora para detectar cáncer en MRIs (imágenes de resonancia magnética) con la misma precisión que radiólogos altamente capacitados."];
 
     $fecha = array("fecha1" => "09/05/2007","fecha2" => "15/05/2014","fecha3" => "02/05/2011");
 
@@ -26,6 +47,16 @@
     $precioTipo6 = 35000;
     $precioTipo7 = 19000;
     $precioTipo8 = 34000;
+
+    $blog = array("blog1" => "Las empresas combinan activamente las estadisticas con conceptos de ciencia informática como el
+    marchine learning y la inteligencia artificial.", "blog2" => "El machine learning, un subconjunto de la inteligencia artificial (IA). se centra en diseñar
+    sistemas que aprenden a través de datos.", "blog3" => "La inteligencia artificial, el machine learning y la ciencia de datos están cambiando la manera
+    en que las empresas abordan problemas complejos para alterar la trayectoria de sus respectias
+    industrias.");
+
+    $Url = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61256.433394945016!2d-71.57470343704381!3d-16.347090697480944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424990324bdd7b%3A0x2b50f69797a5d510!2sCayma!5e0!3m2!1ses-419!2spe!4v1630621949111!5m2!1ses-419!2sp";
+
+    $contacto = array("nombre","email","número");
 
     $name = "Paul Quispe Segales";
 
@@ -90,10 +121,8 @@
     <section class="home" id="home">
 
         <div class="content">
-            <h3> <span style="color: rgb(47, 136, 215);">INTELIGENCIA</span>  artificial</h3>
-            <p><b> En términos simples, inteligencia artificial (IA) se refiere a sistemas o máquinas que imitan la
-                inteligencia humana para realizar tareas y pueden mejorar iterativamente a partir de la información que
-                recopilan.</b> </p>
+            <h3> <span><?php echo "$principal1" ?></span>  <?php echo "$principal2" ?></h3>
+            <p><b><?php echo "$descripcion->descripcion1"; ?> </b> </p>
             <a href="#" class="btn"><?php echo "$btnInfo" ?></a>
         </div>
 
@@ -115,10 +144,7 @@
 
             <div class="content">
                 <h3><?php echo "$titulo1" ?></h3>
-                <p>Aunque no haya una definición estricta, por su naturaleza, cambiante y experimental, en su forma
-                    simple, la Inteligencia Artificial (IA) es la combinación de algoritmos planteados con el propósito
-                    de crear máquinas que presenten las mismas capacidades que el ser humano. En otras palabras, es el
-                    intento de imitar la inteligencia humana usando un robot, o un software.</p>
+                <p> <?php echo "$descripcion->descripcion1" ?> </p>
                     <a href="#" class="btn"><?php echo "$btnMas" ?></a>
             </div>
 
@@ -138,21 +164,11 @@
 
 
             <p>
-                * La inteligencia artificial automatiza el aprendizaje y descubrimiento repetitivos a través de datos. La
-                inteligencia artificial es diferente de la automatización de robots basada en hardware. En lugar de
-                automatizar tareas manuales, la inteligencia artificial realiza tareas computarizadas frecuentes de alto
-                volumen de manera confiable y sin fatiga. Para este tipo de automatización, la investigación humana
-                sigue siendo fundamental para configurar el sistema y hacer las preguntas correctas.
+                <?php echo "$descripcion->descripcion3" ?>
             </p>
 
             <p>
-                IA agrega inteligencia a productos existentes. En la mayoría de los casos, la inteligencia artificial no
-                se venderá como aplicación individual. En su lugar, los productos que ya utiliza serán mejorados con
-                recursos de inteligencia artificial, de forma muy similar en que se agregó Siri como característica a
-                una nueva generación de productos de Apple. La automatización, las plataformas conversacionales, los
-                bots y las máquinas inteligentes se pueden combinar con grandes cantidades de datos para mejorar muchas
-                tecnologías en el hogar y en el lugar de trabajo, desde inteligencia de seguridad hasta análisis de las
-                inversiones.
+                <?php echo "$descripcion->descripcion4" ?>
             </p>
 
 
@@ -168,10 +184,12 @@
 
         <div class="box-container">
 
-            <p>La inteligencia artificial analiza más datos y datos más profundos empleando redes neuronales que tienen muchas capas ocultas. Construir un sistema de detección de fraude con cinco capas ocultas era casi imposible hace unos años. Todo eso ha cambiado con increíble poder de cómputo y el Big Data. Se necesitan muchos datos para entrenar modelos de aprendizaje profundo porque aprenden directamente de los datos. Cuantos más datos les pueda proporcionar, más precisos se vuelven.</p>
+            <p>
+                <?php echo "$descripcion->descripcion5" ?>
+            </p>
 
             <p>
-                La inteligencia artificial logra una increíble precisión a través de redes neuronales profundas – lo cual antes era imposible. Por ejemplo, sus interacciones con Alexa, Google Search y Google Photos están todas basadas en el aprendizaje profundo – y se siguen volviendo más precisas cuanto más las usamos. En el campo de la medicina, las técnicas de inteligencia artificial del aprendizaje profundo, clasificación de imágenes y reconocimiento de objetos se pueden emplear ahora para detectar cáncer en MRIs (imágenes de resonancia magnética) con la misma precisión que radiólogos altamente capacitados.
+            <?php echo "$descripcion->descripcion6" ?>
             </p>
 
             <p>
@@ -207,7 +225,7 @@
 
             <div class="box">
                 <img src="images/quote-img1.png" alt=""  style="height: 58px;width: 80px;">
-                <p>La Inteligencia Artificial (IA) sin lugar a dudas ha sido uno de los grandes avances de la última década, permitiendo agilizar y facilitar procesos a toda escala, y entregando una ayuda fundamental para las personas y empresas. Contar con este tipo de tecnología hoy en día nos entrega la capacidad de conocer mejor a los usuarios, sus comportamientos y alinear servicios dependiendo de las necesidades que éstos tengan..</p>
+                <p><?php echo "$comentarios->comentario1"; ?></p>
                 <img src="images/pic-1.png" class="user" alt="">
                 <h3><?php echo "$persona->persona1"; ?></h3>
                 <h4><?php echo "$fecha[fecha1]" ?></h4>
@@ -216,7 +234,7 @@
 
             <div class="box">
                 <img src="images/quote-img1.png" alt="" style="height: 58px;width: 80px;">>
-                <p>En la sociedad, dentro de las ciencias de la computación, la de la Inteligencia Artificial es una de las áreas que causa más expectación. Que un sistema pueda mejorar su comportamiento sobre la base de la experiencia y que además, tenga una noción de lo que es un error y que pueda evitarlo, resulta muy interesante.    </p>
+                <p><?php echo "$comentarios->comentario2"; ?></p>
                 <img src="images/pic-2.png" class="user" alt="">
                 <h3><?php echo "$persona->persona2"; ?></h3>
                 <h4><?php echo "$fecha[fecha2]" ?></h4>
@@ -225,7 +243,7 @@
 
             <div class="box">
                 <img src="images/quote-img1.png" alt="" style="height: 58px;width: 80px;">>
-                <p>Los métodos tradicionales en Inteligencia Artificial que permitieron el desarrollo de los primeros sistemas expertos y otras aplicaciones, ha ido de la mano de los avances tecnológicos y las fronteras se han ido expandiendo constantemente cada vez que un logro, considerado imposible en su momento, se vuelve posible gracias a los avances en todo el mundo, generando incluso una nueva mentalidad de trabajo.  Creando siempre máquinas capaces de ayudar al ser humano, de sustituirlo en tareas desagradables, duraderas, pesadas o como complemento de ocio. </p>
+                <p><?php echo "$comentarios->comentario3"; ?></p>
                 <img src="images/pic-3.png" class="user" alt="">
                 <h3><?php echo "$persona->persona3"; ?></h3>
                 <h4><?php echo "$fecha[fecha3]" ?></h4>
@@ -246,23 +264,22 @@
 
         <div class="row">
 
-            <iframe class="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61256.433394945016!2d-71.57470343704381!3d-16.347090697480944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424990324bdd7b%3A0x2b50f69797a5d510!2sCayma!5e0!3m2!1ses-419!2spe!4v1630621949111!5m2!1ses-419!2sp"
-                allowfullscreen="" loading="lazy"></iframe>
+            <!-- Url del mapa -->
+            <iframe class="map" src= <?php echo "$Url" ?> allowfullscreen="" loading="lazy"></iframe>
 
             <form action="">
                 <h3>contactarse</h3>
                 <div class="inputBox">
                     <span class="fas fa-user"></span>
-                    <input type="text" placeholder="nombre">
+                    <input type="text" placeholder=<?php echo "$contacto[0]" ?> >
                 </div>
                 <div class="inputBox">
                     <span class="fas fa-envelope"></span>
-                    <input type="email" placeholder="email">
+                    <input type="email" placeholder=<?php echo "$contacto[1]" ?> >
                 </div>
                 <div class="inputBox">
                     <span class="fas fa-phone"></span>
-                    <input type="number" placeholder="número">
+                    <input type="number" placeholder=<?php echo "$contacto[2]" ?> >
                 </div>
                 <input type="submit" value="contactate" class="btn">
             </form>
@@ -288,8 +305,9 @@
                 <div class="content">
                     <a href="#" class="title"><?php echo "$subtitulo1" ?></a>
 
-                    <p>Las empresas combinan activamente las estadisticas con conceptos de ciencia informática como el
-                        marchine learning y la inteligencia artificial.</p>
+                    <p>
+                        <?php echo "$blog[blog1]" ?>
+                    </p>
                     <a href="#" class="btn"><?php echo "$btnMas" ?></a>
                 </div>
             </div>
@@ -300,8 +318,9 @@
                 </div>
                 <div class="content">
                     <a href="#" class="title"><?php echo "$subtitulo2" ?></a>
-                    <p>El machine learning, un subconjunto de la inteligencia artificial (IA). se centra en diseñar
-                        sistemas que aprenden a través de datos.</p>
+                    <p>
+                        <?php echo "$blog[blog2]" ?>
+                    </p>
                     <a href="#" class="btn"><?php echo "$btnMas" ?></a>
                 </div>
             </div>
@@ -312,9 +331,9 @@
                 </div>
                 <div class="content">
                     <a href="#" class="title"><?php echo "$subtitulo3" ?></a>
-                    <p>La inteligencia artificial, el machine learning y la ciencia de datos están cambiando la manera
-                        en que las empresas abordan problemas complejos para alterar la trayectoria de sus respectias
-                        industrias.</p><br>
+                    <p>
+                        <?php echo "$blog[blog3]" ?>
+                    </p><br>
                     <a href="#" class="btn"><?php echo "$btnMas" ?></a>
                 </div>
             </div>
