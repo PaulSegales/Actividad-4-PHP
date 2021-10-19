@@ -6,13 +6,13 @@
     $subtitulo1 = "obtenga más información sobre la ciencia de datos";
     $subtitulo2 = "Obtenga más información sobre el machine learning";
     $subtitulo3 = "noticias y opiniones";
+
     $btnInfo = "Información";
+    $btnMas = "Leer Mas";
 
-    $nombres = (object)["nombre1" =>"john deo", "nombre2" => "Alejandra Avendaño", "nombre3" => "Yúbal Fernández"];
+    $persona = (object)["persona1" =>"john deo", "persona2" => "Alejandra Avendaño", "persona3" => "Yúbal Fernández"];
 
-    $fecha1 = "09/05/2007";
-    $fecha2 = "15/05/2014";
-    $fecha3 = "02/05/2011";
+    $fecha = array("fecha1" => "09/05/2007","fecha2" => "15/05/2014","fecha3" => "02/05/2011");
 
     $precPersonalizado1 = 6000;
     $precPersonalizado2 = 300000;
@@ -26,8 +26,6 @@
     $precioTipo6 = 35000;
     $precioTipo7 = 19000;
     $precioTipo8 = 34000;
-
-    $btnMas = "Leer Mas";
 
     $name = "Paul Quispe Segales";
 
@@ -211,8 +209,8 @@
                 <img src="images/quote-img1.png" alt=""  style="height: 58px;width: 80px;">
                 <p>La Inteligencia Artificial (IA) sin lugar a dudas ha sido uno de los grandes avances de la última década, permitiendo agilizar y facilitar procesos a toda escala, y entregando una ayuda fundamental para las personas y empresas. Contar con este tipo de tecnología hoy en día nos entrega la capacidad de conocer mejor a los usuarios, sus comportamientos y alinear servicios dependiendo de las necesidades que éstos tengan..</p>
                 <img src="images/pic-1.png" class="user" alt="">
-                <h3><?php echo "$nombres->nombre1"; ?></h3>
-                <h4><?php echo "$fecha1" ?></h4>
+                <h3><?php echo "$persona->persona1"; ?></h3>
+                <h4><?php echo "$fecha[fecha1]" ?></h4>
   
             </div>
 
@@ -220,8 +218,8 @@
                 <img src="images/quote-img1.png" alt="" style="height: 58px;width: 80px;">>
                 <p>En la sociedad, dentro de las ciencias de la computación, la de la Inteligencia Artificial es una de las áreas que causa más expectación. Que un sistema pueda mejorar su comportamiento sobre la base de la experiencia y que además, tenga una noción de lo que es un error y que pueda evitarlo, resulta muy interesante.    </p>
                 <img src="images/pic-2.png" class="user" alt="">
-                <h3><?php echo "$nombres->nombre2"; ?></h3>
-                <h4><?php echo "$fecha2" ?></h4>
+                <h3><?php echo "$persona->persona2"; ?></h3>
+                <h4><?php echo "$fecha[fecha2]" ?></h4>
 
             </div>
 
@@ -229,8 +227,8 @@
                 <img src="images/quote-img1.png" alt="" style="height: 58px;width: 80px;">>
                 <p>Los métodos tradicionales en Inteligencia Artificial que permitieron el desarrollo de los primeros sistemas expertos y otras aplicaciones, ha ido de la mano de los avances tecnológicos y las fronteras se han ido expandiendo constantemente cada vez que un logro, considerado imposible en su momento, se vuelve posible gracias a los avances en todo el mundo, generando incluso una nueva mentalidad de trabajo.  Creando siempre máquinas capaces de ayudar al ser humano, de sustituirlo en tareas desagradables, duraderas, pesadas o como complemento de ocio. </p>
                 <img src="images/pic-3.png" class="user" alt="">
-                <h3><?php echo "$nombres->nombre1"; ?></h3>
-                <h4><?php echo "$fecha3" ?></h4>
+                <h3><?php echo "$persona->persona3"; ?></h3>
+                <h4><?php echo "$fecha[fecha3]" ?></h4>
 
             </div>
 
