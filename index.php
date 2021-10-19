@@ -134,7 +134,7 @@
 
     <section class="about" id="about">
 
-        <h1 class="heading"> <span>definición</span> ai </h1>
+        <h1 class="heading"> <span><?php echo "$menu[1]" ?></span> ai </h1>
 
         <div class="row">
 
@@ -158,7 +158,7 @@
 
     <section class="menu" id="menu">
 
-        <h1 class="heading"> su <span>importancia</span> </h1>
+        <h1 class="heading"> su <span><?php echo "$menu[2]" ?></span> </h1>
 
         <div class="box-container">
 
@@ -180,7 +180,7 @@
 
     <section class="products" id="products">
 
-        <h1 class="heading"> analisis <span>de datos y costos </span> </h1>
+        <h1 class="heading"> <?php echo "$menu[3]" ?> <span>de datos y costos </span> </h1>
 
         <div class="box-container">
 
@@ -219,7 +219,7 @@
 
     <section class="review" id="review">
 
-        <h1 class="heading"> comentarios <span>relevantes</span> </h1>
+        <h1 class="heading"> <?php echo "$menu[4]" ?> <span>relevantes</span> </h1>
 
         <div class="box-container">
 
@@ -260,7 +260,7 @@
 
     <section class="contact" id="contact">
 
-        <h1 class="heading"> <span>contacto</span> </h1>
+        <h1 class="heading"> <span><?php echo "$menu[5]" ?></span> </h1>
 
         <div class="row">
 
@@ -294,7 +294,7 @@
 
     <section class="blogs" id="blogs">
 
-        <h1 class="heading"> nuestros <span>blogs</span> </h1>
+        <h1 class="heading"> nuestros <span><?php echo "$menu[6]" ?></span> </h1>
 
         <div class="box-container">
 
